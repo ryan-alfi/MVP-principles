@@ -10,7 +10,7 @@ import android.os.Handler;
  * Created by ryanalfi on 16/07/18.
  */
 
-public class GetQuoteInteractorImpl implements GetQuoteInteractor {
+public class GetQuoteInteractorImpl implements MainContract.GetQuoteInteractor {
 
     private List<String> arrayList = Arrays.asList(
             "Be yourself. everyone else is already taken.",

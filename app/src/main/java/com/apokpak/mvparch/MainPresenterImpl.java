@@ -4,12 +4,12 @@ package com.apokpak.mvparch;
  * Created by ryanalfi on 16/07/18.
  */
 
-public class MainPresenterImpl implements MainPresenter, GetQuoteInteractor.OnFinishedListener {
+public class MainPresenterImpl implements MainContract.Presenter, MainContract.GetQuoteInteractor.OnFinishedListener {
 
-    private MainView mainView;
-    private GetQuoteInteractor getQuoteInteractor;
+    private MainContract.MainView mainView;
+    private MainContract.GetQuoteInteractor getQuoteInteractor;
 
-    public MainPresenterImpl(MainView mainView, GetQuoteInteractor getQuoteInteractor) {
+    public MainPresenterImpl(MainContract.MainView mainView, MainContract.GetQuoteInteractor getQuoteInteractor) {
         this.mainView = mainView;
         this.getQuoteInteractor = getQuoteInteractor;
     }
